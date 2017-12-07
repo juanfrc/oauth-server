@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   use_doorkeeper
   devise_for :users
-  root 'home#index'
-  get '/provider' => 'application#provider'
+  root 'application#me'
+  get '/me' => 'application#me'
 end
